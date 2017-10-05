@@ -4,7 +4,7 @@
 #$ -cwd
 #$ -N myjob
 #$ -j y
-#$ -o test1.qlog
+#$ -o hello.qlog
 #$ -l mem_free=32G
 #$ -pe smp 20
 #$ -V
@@ -14,4 +14,4 @@ export LD_LIBRARY_PATH=${CUDA_HOME}/lib64:$LD_LIBRARY_PATH
 
 module load anaconda3
 source activate jacobenv
-python test_tf.py 
+python hello_tf.py 
